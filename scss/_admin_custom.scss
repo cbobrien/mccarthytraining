@@ -1,0 +1,200 @@
+body {
+	background: $white;
+}
+
+.mccarthy-logo {
+	background: url(../images/mccarthy-bidvest.png) no-repeat;
+	text-indent: -9999em;
+	width: 70px;
+	height: 45px;
+}
+
+.alert-box {
+	font-size: 100%;
+}
+
+.top-bar-section ul.dropdown li {
+	border-top: 1px #fff solid;
+}
+
+p.header {
+	background: #e6e6e6;
+	padding: 20px 20px 5px;
+	overflow: hidden;
+	margin-bottom: 1px;
+}
+
+.title {
+	font-size: 40px;
+	color: #222;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.admin-list {
+	list-style: none;
+	margin-left: 0;
+
+	li {
+		margin-bottom: 1px;
+	}
+
+	a {
+		width: 100%;
+		text-align: left;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.centre {
+	text-align: center;
+}
+
+form p,
+.element-container,
+.view p{
+	background: #f3f3f3;
+	padding: 20px;
+	margin-bottom: 1px;
+}
+
+table {
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+tbody tr:nth-child(even) { /*(even) or (2n 0)*/
+	background: #ededed;
+}
+
+tbody tr:nth-child(odd) { /*(odd) or (2n 1)*/
+	background: #f3f3f3;
+}
+
+table.dataTable {
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+table thead {
+	background: #767676;
+
+	tr th {
+		color: $white;
+		border: 1px #fff solid;		
+	}
+}
+
+// .applications-table table.dataTable tr th{
+// 	&.head10 {
+// 		width: 140px !important;
+// 	}
+
+// 	&.head11 {
+// 		width: 170px !important;
+// 	}
+// }
+
+select#status {
+	width: 100px;
+}
+
+div.date {
+	width: 150px;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+	border-bottom: none;
+
+}
+
+table.dataTable thead th {
+	padding: 10px;
+}
+
+table.dataTable thead .sorting {
+	//background: url("../images/sort_both.png") no-repeat center right;
+	background: none;
+}
+
+table.dataTable thead .sorting_desc {
+	//background: url('../images/sort_desc.png') no-repeat center right;
+	background: none;
+}
+
+table.dataTable thead .sorting_asc {
+	//background: url('../images/sort_asc.png') no-repeat center right;
+	background: none;
+}
+
+table tr td {
+	color: #222;
+	border: 1px #fff solid;
+}
+
+table.dataTable tbody tr {
+	background-color: #f0f2f4;
+
+	&.even {
+		background-color: #e6e9eb;
+	}
+}
+
+.dataTables_paginate {
+	margin-top: 10px;
+}
+
+.paging_full_numbers a.paginate_button,
+.paging_full_numbers a.paginate_active {
+	border-radius: 0;
+	padding: 10px;	
+}
+
+a.matric,
+a.n2,
+a.id,
+a.cv {
+	padding: 15px 15px 15px 23px;
+	background: #0d1b3a url(../images/download.png) no-repeat 5px center;
+	color: #fff;
+
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+a.n2 {
+	background-color: #1d292f;
+}
+
+a.id {
+	background-color: #103c1b;
+}
+
+a.cv {
+	background-color: #0b4560;
+}
+
+.button-smaller {
+	padding: 15px;
+	margin-bottom: 0;
+}
+
+.view {
+	background-image: url(../images/view.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}
+
+.delete {
+	background-image: url(../images/delete.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 25px;
+}

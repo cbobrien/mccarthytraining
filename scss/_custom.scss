@@ -1,0 +1,783 @@
+body {
+	background: #fff url(../images/bg-body.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;;
+}
+
+::-webkit-scrollbar-track {
+      background-color: #d49e1f;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #efb428;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: #c28d0f;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+img {
+	min-width: 100%;
+}
+
+.container {
+	background: rgba($white, 0.9);
+	padding: 20px 10px;
+	max-width: $row-width;
+	margin: 28px auto;
+}
+
+.left-small {
+	border-right-color: $white;
+}
+
+.logo {
+	display: block;
+	background: url(../images/sprites.png) no-repeat;
+	width: 225px;
+	height: 78px;
+	text-indent: -9999em;
+}
+
+.title-area {
+	margin-left: 0;
+}
+
+.tab-bar {
+	&.career-guide {
+		background-color: $career-guide;
+	}
+
+	&.course-info {
+		background-color: $course-info;
+	}
+
+	&.gallery {
+		background-color: $gallery;
+	}
+
+	&.apply {
+		background-color: $apply;
+	}
+
+	&.blog {
+		background-color: #35a1d3;
+	}
+}
+
+a {
+	&.home {
+		background-color: $home;
+	}
+
+	&.career-guide {
+		background-color: $career-guide;
+	}
+
+	&.course-info {
+		background-color: $course-info;
+	}
+
+	&.gallery {
+		background-color: $gallery;
+	}
+
+	&.apply {
+		background-color: $apply;
+	}
+
+	&.blog {
+		background-color: #35a1d3;
+	}
+}
+
+ul.off-canvas-list li a.home:hover {
+	background: lighten($home, 7%);
+}
+
+// ul.off-canvas-list li a.home.active {
+// 	padding-left: 25px;
+// }
+
+ul.off-canvas-list li a.career-guide:hover {
+	background: lighten($career-guide, 7%);
+}
+
+ul.off-canvas-list li a.course-info:hover {
+	background: lighten($course-info, 7%);
+}
+
+ul.off-canvas-list li a.gallery:hover {
+	background: lighten($gallery, 7%);
+}
+
+ul.off-canvas-list li a.apply:hover {
+	background: lighten($apply, 7%);
+}
+
+ul.off-canvas-list li a.blog:hover {
+	background: lighten(#35a1d3, 7%);
+}
+
+ul.off-canvas-list li a {
+
+	transition: 0.6s all ease;
+
+	&.active, &:hover {
+		padding-left: 25px;
+	}
+
+	// &.home {
+	// 	background: lighten($home, 7%);
+	// }
+
+	// &.
+}
+
+// ul.left-off-canvas-menu li a {
+
+// 	//color: $white;
+
+// 	// &:hover {
+// 	// 	background: red;
+// 	// }
+
+// 	&.home {
+
+// 		&:hover {
+// 			background: lighten($home, 7%);
+// 		}		
+// 	}
+
+// 	&.career-guide {
+
+// 		&:hover {
+// 			background-color: lighten($career-guide, 7%);
+// 		}		
+// 	}
+
+// 	&.course-info {
+
+// 		&:hover {
+// 			background-color: lighten($course-info, 7%);
+// 		}		
+// 	}
+
+// 	&.gallery {
+
+// 		&:hover {
+// 			background-color: lighten($gallery, 7%);
+// 		}		
+// 	}
+
+// 	&.apply {
+
+// 		&:hover {
+// 			background-color: lighten($apply, 7%);
+// 		}		
+// 	}
+// }
+
+// .left-off-canvas-menu {
+// 	a {
+// 		&.home {
+// 			background-color: #e35430;
+// 			&:hover, &.active {
+// 			}
+// 		}
+// 	}
+// }
+
+// .left-off-canvas-toggle {
+// 	background: $bidvest-blue;
+// 	padding: 10px;
+// }
+
+// .move-right .exit-off-canvas {
+// 	background: rgba(255, 255, 255, 0)
+// }
+
+.carousel-slide {
+	position: relative;
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+//slick slider home page
+.carousel-caption {
+	bottom: 0;
+	min-height: 67px;
+	left: 0;
+	position: absolute;
+	z-index: 2;
+	background: rgba($black, 0.7);
+	padding: 20px;
+}
+
+.slick-dots {
+	bottom: 0;
+	min-height: 40px;
+	right: 0;
+	position: absolute;
+	width: 50%;
+	z-index: 2;
+	padding: 20px;
+	margin-bottom: 0;
+	text-align: right;
+
+	li button {
+		background: rgba(165, 166, 168, 0.8);
+
+		&:before {
+			display: none;
+		}
+
+		&:hover {
+			background: $white;
+		}
+	}
+
+	.slick-active button {
+		background: $white;
+	}
+}
+
+
+//slick slider gallery pages
+.slick-gallery-carousel {
+
+	margin-right: 60px;
+
+	img {
+		border-right: 10px transparent solid;
+
+		&:hover {
+			cursor: pointer;
+			opacity: 0.9;
+		}
+	}
+
+	.slick-prev {
+		
+		height: 30px;
+		width: 45px;
+		left: auto;
+		right: 20px;
+		margin-top: -40px;
+		margin-right: -80px;
+
+		&:before {
+			font-family: $font-family-sans-serif;
+			content: 'Back';
+			background: #973074;
+			padding: 0.5em 0.5em;
+			font-size: 14px;
+		}
+	}
+
+	.slick-next {
+
+		height: 30px;
+		width: 45px;
+		left: auto;
+		right: 20px;
+		margin-top: 10px;
+		margin-right: -80px;	
+
+		&:before {
+			font-family: $font-family-sans-serif;
+			content: 'Next';
+			background: #973074;
+			padding: 0.5em 0.5em;
+			font-size: 14px;
+		}
+	}
+
+}
+
+.gallery-large-image-container {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.gallery-loader {
+	display: none;
+	min-width: 32px;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -16px;
+	margin-left: -16px;
+}
+
+.gallery-landing {
+
+	list-style: none;
+	margin-left: 0;
+
+	li {
+		margin-bottom: 1px;
+	}
+
+
+	a {
+		display: block;
+		background: #973074 url(../images/gallery-link.png) no-repeat 10px center;
+		padding: 10px 10px 10px 40px;
+		transition: 0.5s all ease;
+
+		&:hover {
+			background-color: #ad3885;
+		}
+	}
+}
+
+.quick-contact {
+	background: $apple;
+	padding: 15px 20px;
+}
+
+.contact-form {
+	p {
+		margin-bottom: 0;
+	}
+
+	p:last-of-type {
+		margin-top: 15px;
+	}
+
+	// input[type='submit'] {
+	// 	background: $white;
+	// 	color: $apple;
+	// 	font-size: 1.1rem;
+	// 	border: none;
+	// 	padding: 5px 15px;
+	// 	-moz-box-shadow:    inset 0 0 10px #8a8a8a;
+	//     -webkit-box-shadow: inset 0 0 10px #8a8a8a;
+	//     box-shadow:         inset 0 0 10px #8a8a8a;
+
+	//     &:hover {
+	//     	cursor: pointer;
+	//     	-moz-box-shadow:    none;
+	// 	    -webkit-box-shadow: none;
+	// 	    box-shadow:         none;
+	//     }
+	// }
+
+}
+
+.submit {
+	background: $white;
+	color: $apple;
+	font-size: 1.1rem;
+	border: none;
+	padding: 5px 15px;
+	-moz-box-shadow: inset 0 0 10px #8a8a8a;
+    -webkit-box-shadow: inset 0 0 10px #8a8a8a;
+    box-shadow: inset 0 0 10px #8a8a8a;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+    	cursor: pointer;
+    	-moz-box-shadow: none;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    background: $white;
+	    color: $apple;
+    }
+}
+
+.welcome {
+	background: #1c1c1c;
+	color: $white;
+	padding: 15px 20px;
+}
+
+.footer {
+	color: #58595b;
+	margin-top: 40px;
+	clear: both;
+
+	a {
+		color: #58595b;
+	}
+}
+
+.mccarthy-logo {
+	background: url(../images/mccarthy-bidvest.png) no-repeat;
+	text-indent: -9999em;
+	width: 70px;
+	height: 45px;
+}
+
+.careers-banner {
+	margin-bottom: 30px;
+}
+
+.career-progressions {
+	background: $career-guide;
+	padding: 15px;
+	//max-height: 373px;
+	//overflow-y: scroll;
+}
+
+.career-accordion h4 {
+ 	
+ 	background: #ecc218;
+ 	padding: 10px 10px 10px 45px;
+	background-image: url(../images/folder-closed.png);
+ 	background-repeat: no-repeat;
+ 	background-position: 10px center;
+
+ 	&.active,
+ 	&:hover {
+ 		cursor: pointer;
+		background-image: url(../images/career-guide.png);
+		background-color: #f6ca19;
+ 	}
+ }
+
+ .career-accordion div {
+ 	display: none;
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ }
+
+ .careers-accordion div.default {
+ 	display: block
+ }
+
+
+.course-info-container {
+	padding: 15px;
+	background: $course-info;
+
+	a {
+		font-weight: bold;
+		text-decoration: underline;
+		font-size: 17px;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.gallery-container {
+	background: $gallery;
+	padding: 15px;
+}
+
+.apply-container {
+	background: #458229;
+	padding: 15px;
+}
+
+.sitemap-container {
+	background: $bidvest-blue;
+	padding: 15px;
+
+}
+
+.terms-container {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 15px;
+	color: #262626;
+
+	h2, a {
+		color: #262626;
+	}
+}
+
+.home-thumbs {
+	img {
+		margin-bottom: 10px;
+	}
+}
+
+.ui-accordion-container {
+	list-style: none;
+}
+
+.ui-widget-content {
+	background: transparent;
+	border: 1px #fff solid;
+}
+
+.apply-container .ui-accordion .ui-accordion-header {
+	display: none;
+	margin: 0;
+	padding: 5px;
+}
+
+.ui-accordion .ui-accordion-content {
+	border: 1px #fff solid;
+	overflow: visible;
+	padding: 20px 30px;
+}
+
+.ui-accordion-content {
+	height: auto !important;
+}
+
+.ui-widget button,
+.ui-widget-content {
+	font-family: $font-family-sans-serif;
+	color: $white;
+}
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
+	font-family: $font-family-sans-serif;
+	color: #333;
+	font-size: 0.875rem;
+}
+
+.ui-widget input[type="file"] {
+margin: 0 0 10px 0;
+font-size: 16px;
+color: #fff;
+}
+
+input.warning {
+	border: 1px #ffd21b solid;
+}
+
+.apply-form {
+	
+	legend {
+		color: #333;
+		padding: 10px;
+	}
+
+	p {
+		padding: 10px 20px;
+		background: #599c3b;
+		margin-bottom: 1px;
+
+		&:last-child {
+			padding: 0;
+			background: none;
+			margin-top:4px;
+		}
+	}
+	
+	.button {
+		background-color: $bidvest-blue;
+		color: $white;
+		padding: 10px 20px;
+
+		&:hover {
+			background-color: #1f0895;
+		}
+
+		&.prevbutton {
+			background-color: $career-guide;
+
+			&:hover {
+				background-color: scale-color($career-guide, 30%);
+			}
+		}
+	}
+
+	.upload {
+		width: 120px;
+    	height: 40px;
+    	color: $white;
+    	background: $gallery;
+    	font-weight: normal;
+    	position: relative;
+    	padding: 8px 0 0 20px;
+    	// &:before {
+    	// 	content: 'Select file...';
+    	// 	padding: 10px;
+    	// 	position: absolute;
+    	// 	left: 11px;
+    	// 	top: -1px;
+    	// 	//border:1px red solid;
+    	// 	width: 120px;
+    	// 	height: 40px;
+    	// 	cursor: pointer;
+    	// 	font-weight: normal;
+    	// 	font-size: 16px;
+    	// 	display: block;
+    		
+    	// }
+
+    	&:hover {
+    		cursor: pointer;
+    		background: #dc4ea8;
+    	}
+
+		input {
+			width: 120px;
+    		height: 40px;
+    		display: block;
+    		opacity: 0;
+			position: absolute;
+			top: 1px;
+			left: 1px;
+		}
+
+		span {
+			font-size: 14px;
+			position: absolute;
+			top: 8px;
+			left: 130px;
+		}
+	}
+}
+
+.upload-container {
+	background: #599c3b;
+	padding: 10px 10px 10px 17px;
+	margin-bottom: 1px;
+}
+
+.file-matric-container,
+.file-N2-container {
+	display: none;
+}
+
+.warning {
+	color: #ffd21b;
+	font-size: 16px;
+}
+
+table {
+	border: none;
+	background: none;
+	border-collapse: collapse;
+
+	tr td {
+		font-size: 100%;
+	}
+}
+
+table tr.even, table tr.alt,
+table tr:nth-of-type(even) {
+	background: none;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {	
+	font-size: 100%;
+}
+
+.alert-box {
+	font-size: 100%;
+}
+
+.enquiry-form-container {
+	position: relative;
+}
+
+.enquiry-spinner {
+	width: 54px;
+	height: 55px;
+	position:absolute;
+	top: 30%;
+	left: 50%;
+	min-width: 54px;
+	margin-left: -27px;
+	display: none;
+}
+
+button.disabled:hover, 
+button.disabled:focus, 
+button[disabled]:hover, 
+button[disabled]:focus,
+button[disabled] {
+	background: $white;
+	color: #333;
+}
+
+.radio,
+.checkbox {
+  display: block;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+	label {
+		padding-left: 20px;
+		margin-bottom: 0;
+		font-weight: normal;
+		cursor: pointer;
+		line-height: 1.1;
+	  }
+}
+
+.radio input[type="radio"],
+.checkbox input[type="checkbox"] {
+	float: left;
+	margin-left: -20px;
+	margin-top: 4px;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+	margin-top: -5px;
+}
+
+element.style {
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+	margin: 0 0 0.5rem 0;
+}
+
+.slider {margin: 50px 0 10px!important;}
+#carousel li {margin-right: 5px;}
+#carousel img {display: block; opacity: .5; cursor: pointer;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+.flex-direction-nav a {
+	height: 50px;
+}
+
+.no-min-width {
+	min-width: 0;
+}
+
+.off-canvas-title {
+	margin-left: 60px;
+}
+
+
+td.top {
+ vertical-align: top;
+}
+
+.address {
+	padding-top: 20px;
+	color: #000;
+}

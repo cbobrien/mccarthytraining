@@ -1,0 +1,260 @@
+// Large screens
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+
+@media #{$small-up} { 
+	.container {
+		margin-top: 0;
+	}
+
+	$tabbar-height: rem-calc(45);
+
+	.top-nav {
+		a {
+			display: none;
+		}
+	}
+
+	.carousel {
+		display: none;
+	}
+
+	.footer-left {
+		text-align: center;
+	}
+
+	.mccarthy-logo {
+		margin: 10px auto 0;
+	}
+
+	.careers-banner {
+		display: none;
+	}
+
+	.top-nav {
+
+		margin-left: 0;
+
+		li {
+			display: inline-block;
+		}
+
+		a {
+			height: 79px;		
+			display: block;	
+			border-top: 5px $home solid;
+
+			span {
+				display: block;
+				padding: 50px 10px 0;
+			}
+
+			&.home {
+				background-color: $home;
+
+				&:hover, &.active {
+					border-top-color: #aa3e1f;
+				}
+			}
+
+			&.career-guide {
+				background-color: #ecc218;
+				border-top-color: #ecc218;
+
+				&:hover, &.active {
+					border-top-color: #eaad21;
+				}
+			}
+
+			&.course-info {
+				background-color: #115d8f;
+				border-top-color: #115d8f;
+
+				&:hover, &.active {
+					border-top-color: #12406c;
+				}			
+			}
+
+			&.gallery {
+				background-color: #c94699;				
+				border-top-color: #c94699;
+
+				&:hover, &.active {
+					border-top-color: #b72b91;
+				}	
+			}
+
+			&.apply {
+				background-color: #69b745;
+				border-top-color: #69b745;
+
+				&:hover, &.active {
+					border-top-color: #4a8b32;
+				}
+			}
+
+			&.blog {
+				background-color: #35a1d3;
+				border-top-color: #2684b0;
+
+				&:hover, &.active {
+					border-top-color: #2684b0;
+				}
+			}
+		}
+		
+	}
+
+}
+
+@media #{$small-only} { 
+	.slick-gallery-carousel .slick-prev {
+		margin-top: -35px;
+	}
+
+	.slick-gallery-carousel .slick-next {
+		margin-top:5px;
+	}
+}
+
+@media #{$medium-up} {
+	
+	.carousel {
+		display: block;
+	}
+
+	.carousel-caption {
+		width: 100%;
+	}
+
+	.slick-dots {
+		background: none;
+
+		li {
+			display: none;
+		}
+	}
+
+	.footer-left {
+		text-align: left;
+	}
+
+	.mccarthy-logo {
+		margin: 0;
+		float: right;
+	}
+
+	.careers-banner {
+		display: block;
+	}
+
+}
+
+@media #{$medium-only} { }
+
+@media #{$large-up} { 
+
+	.container {
+		margin-top: 20px;
+	}
+
+	.top-nav {
+		
+		a {
+			text-indent: -9999em;
+			width: 99px;		
+			background: url(../images/sprites.png) no-repeat;
+			background-position: 0 -78px;
+			margin-left: 2px;
+			border-top: none;
+
+			&:hover, &.active {
+				opacity: 1;
+			}
+	
+			&.home {
+				background-color: #e35430;
+				background-position: 0 -78px;
+				margin-left: 0;
+
+				&:hover, &.active {
+					background-position: 0 -158px;
+				}
+			}
+
+			&.career-guide {
+				background-color: #ecc218;
+				background-position: -99px -78px;
+
+				&:hover, &.active {
+					background-position: -99px -158px;
+				}
+			}
+
+			&.course-info {
+				background-color: #115d8f;
+				background-position: -198px -78px;
+
+				&:hover, &.active {
+					background-position: -198px -158px;
+				}
+			}
+
+			&.gallery {
+				background-color: #c94699;
+				background-position: -298px -78px;
+
+				&:hover, &.active {
+					background-position: -298px -158px;
+				}
+			}
+
+			&.apply {
+				background-color: #69b745;
+				background-position: -397px -78px;
+
+				&:hover, &.active {
+					background-position: -397px -158px;
+				}
+			}
+
+			&.blog {
+				background-color: #69b745;
+				background-position: -496px -78px;
+
+				&:hover, &.active {
+					background-position: -496px -158px;
+				}
+			}
+		}
+	}
+
+	.carousel-caption {
+		width: 50%;
+	}
+
+	.slick-dots {
+		background: rgba($black, 0.7);
+
+		li {
+			display: inline-block;
+		}
+	}
+
+}
+@media #{$large-only} { }
+
+@media #{$xlarge-up} { }
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }
